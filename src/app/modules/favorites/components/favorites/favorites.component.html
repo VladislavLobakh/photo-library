@@ -1,1 +1,4 @@
-<p>favorites works!</p>
+<app-photos-list
+  [photos]="photos$ | async"
+  (photoClicked)="openFavoritePhoto($event)"
+></app-photos-list>

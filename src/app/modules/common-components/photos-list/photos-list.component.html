@@ -1,0 +1,9 @@
+<div class="photos-list">
+  <img
+    *ngFor="let photo of photos; let i = index"
+    class="photos-list__photo"
+    [src]="photo"
+    [alt]="'Photo ' + i"
+    (click)="photoClicked.emit(photo)"
+  />
+</div>

@@ -1,0 +1,16 @@
+<div class="favorite-photo-details">
+  <img
+    class="favorite-photo-details__image"
+    [src]="imgUrl"
+    alt="Favorite image"
+  />
+
+  <button
+    mat-raised-button
+    color="primary"
+    class="favorite-photo-details__button"
+    (click)="remove()"
+  >
+    Remove from favorites
+  </button>
+</div>
