@@ -1,0 +1,12 @@
+<div class="header">
+  <ng-container *ngFor="let item of navigationItems">
+    <a
+      mat-raised-button
+      [routerLink]="item.route"
+      [color]="(activeItem$ | async)?.id === item.id ? 'primary' : ''"
+      class="header__button"
+    >
+      {{ item.title }}
+    </a>
+  </ng-container>
+</div>

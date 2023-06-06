@@ -1,0 +1,19 @@
+@import "./styles/vars.scss";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.app {
+  &__header {
+    flex-shrink: 0;
+  }
+
+  &__content {
+    margin-top: $header-height;
+    flex-grow: 1;
+    overflow: auto;
+  }
+}
