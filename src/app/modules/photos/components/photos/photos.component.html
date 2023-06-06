@@ -1,1 +1,6 @@
-<p>photos works!</p>
+<app-photos-list
+  [photos]="photos"
+  (photoClicked)="addFavoritePhoto($event)"
+></app-photos-list>
+<div *ngIf="isLoading" class="loader">Loading...</div>
+<div #trackLine></div>

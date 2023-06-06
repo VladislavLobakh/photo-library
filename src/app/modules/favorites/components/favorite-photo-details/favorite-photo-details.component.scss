@@ -1,0 +1,16 @@
+.favorite-photo-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 24px;
+
+  &__image {
+    align-self: center;
+    width: 40%;
+  }
+
+  &__button {
+    margin-top: 24px;
+    align-self: center;
+  }
+}
